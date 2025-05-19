@@ -12,13 +12,19 @@ The training dataset contains 10,000 images (28x28 grayscale) with 1,000 samples
 If the testing accuracy of your prediction is greater than 85%, you will receive full credits.
 
 ### Classification method
-* **Binary Classification** (sigmoid activation function)
+* **Binary Classification (87.14%)**
+  * Basis function: polynomial basis function $x^2$ <br/>
+    strong enough to differentiate between odds and evens, but not enough for the model to pick up all the details of every digit.
+  * Activation function: sigmoid function
 
-  <img src="https://github.com/28604/ml-classification/blob/main/img/binary%20classification.png" width="400" alt="An image of binary classification pipeline"> 
+    <img src="https://github.com/28604/ml-classification/blob/main/img/binary%20classification.png" width="400" alt="An image of binary classification pipeline"> 
   
-* **Multi-class Classification** (softmax activation function)
+* **Multi-class Classification (88.43%)**
+  * Basis function: polynomial basis function $x^{30}$ <br/>
+    strong enough to pick up the details of every digit, and would not be to sensitive to noise.
+  * Activation function: softmax function
 
-  <img src="https://github.com/28604/ml-classification/blob/main/img/multi-class%20classification.png" width="400" alt="An image of mult-class classification pipeline"> 
+    <img src="https://github.com/28604/ml-classification/blob/main/img/multi-class%20classification.png" width="400" alt="An image of mult-class classification pipeline"> 
 
 ### Other Details
 * K-fold cross validation
