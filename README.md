@@ -12,17 +12,18 @@ The training dataset contains 10,000 images (28x28 grayscale) with 1,000 samples
 If the testing accuracy of your prediction is greater than 85%, you will receive full credits.
 
 ### Classification method
-* **Binary Classification**
+* **Binary Classification** (sigmoid activation function)
 
   <img src="https://github.com/28604/ml-classification/blob/main/img/binary%20classification.png" width="400" alt="An image of binary classification pipeline"> 
   
-* **Multi-class Classification**
+* **Multi-class Classification** (softmax activation function)
 
   <img src="https://github.com/28604/ml-classification/blob/main/img/multi-class%20classification.png" width="400" alt="An image of mult-class classification pipeline"> 
 
 ### Other Details
 * K-fold cross validation
-* Use gradient descent for less computation
+* Gradient descent for less computation than Newton-Raphson method
+* One-hot encoding for multi-class classification
 
 ### Challenge
 * Find the best basis function to make the features as linearly separable as possible
